@@ -16,20 +16,22 @@ const ChatModal = ({ massages, setMassages, modal, handleCloseModal, chat }) => 
     const sendImg = e => {
         e.preventDefault();
 
-        const newImg = {
-            chat,
-            id: Math.random().toString(36).substring(2, 9),
-            isImg: true,
-            url: urlValue,
-            massage: value,
-            time: `${new Date().getHours()}:${new Date().getMinutes() < 10 ? '0' + new Date().getMinutes() : new Date().getMinutes()}`,
+        if (value) {
+            const newImg = {
+                chat,
+                id: Math.random().toString(36).substring(2, 9),
+                isImg: true,
+                url: urlValue,
+                massage: value,
+                time: `${new Date().getHours()}:${new Date().getMinutes() < 10 ? '0' + new Date().getMinutes() : new Date().getMinutes()}`,
+            }
+    
+            setMassages([...massages, newImg]);
+            setUrlValue('');
+            setValue('');
+    
+            handleCloseModal();
         }
-
-        setMassages([...massages, newImg]);
-        setUrlValue('');
-        setValue('');
-
-        handleCloseModal();
     }
 
     return (
