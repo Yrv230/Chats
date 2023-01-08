@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Chats/static/css/main.b4af4be5.css",
+    "main.js": "/Chats/static/js/main.f68630b7.js",
+    "static/media/chat-bg.png": "/Chats/static/media/chat-bg.db93039bd7a43771c314.png",
+    "index.html": "/Chats/index.html",
+    "main.b4af4be5.css.map": "/Chats/static/css/main.b4af4be5.css.map",
+    "main.f68630b7.js.map": "/Chats/static/js/main.f68630b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4af4be5.css",
+    "static/js/main.f68630b7.js"
+  ]
+}
